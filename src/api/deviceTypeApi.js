@@ -65,3 +65,11 @@ export const deleteDeviceTypeById = (params) => {
     params: params
   })
 }
+// 测试提交
+export const deleteDeviceTypeByIdTest = (params) => {
+  return axios.request({
+    url: Vue.prototype.HOST + '/deviceType/deleteDeviceTypeById',
+    method: 'post',
+    params: params
+  })
+}
